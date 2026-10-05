@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Interactive Birthday Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="box">
+
+<div id="home">
+ <h1 id="title">You've got mail!</h1>
+ <img src="images/letter.jpg" width="300" onclick="openLetter()">
+ <p>click on the letter to see!</p>
+ </div>
+
+<!--Button, opens to the birthday card-->
+ <div id="cardPage" style="display: none;">
+
+<h1>Happy Birthday!</h1>
+<img src="images/cake.jpg" width="300" onclick="cakeAlert()">
+<p>click on the cake, for a message!</p>
+<button onclick="goHome()">Back Home</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<!--function openLetter() 
+    document.getElementById("box").style.backgroundColor = "lightyellow",
+    document.getElementById("title").style.color="pink";
+    document.getElementById ("title").style.fontSize="60px"-->
+
+
+</body>
+</html>
